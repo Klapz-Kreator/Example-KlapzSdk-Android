@@ -3,9 +3,9 @@ package com.klapz.Test;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import com.klapz.mylibrary.KlapzButton;
 import com.klapz.mylibrary.api.KlapzConfig;
+import com.klapz.mylibrary.KlapzButton;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     //++++++++++++++++++++++++++++++++
         klapzconfig.Config(klapzobject,this);
         // If user logout Pl call thi function
-        klapzconfig.Close(this);
+//        klapzconfig.Close(this);
     //++++++++++++++++++++++++++++++++
 
 
