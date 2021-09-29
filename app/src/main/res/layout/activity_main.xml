@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.klapz.mylibrary.KlapzButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+<!--    <com.klapz.mylibrary.KlapzButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:ignore="MissingConstraints">-->
 
-    </com.klapz.mylibrary.KlapzButton>
-
-
+<!--    </com.klapz.mylibrary.KlapzButton>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
