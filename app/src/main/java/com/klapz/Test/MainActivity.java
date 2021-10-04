@@ -1,7 +1,9 @@
 package com.klapz.Test;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import com.klapz.mylibrary.api.KlapzConfig;
 import com.klapz.mylibrary.KlapzButton;
@@ -12,6 +14,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
             klapzobject.put("klapz", 2);
             klapzobject.put("createrID", "createrID");
             klapzobject.put("Url", "https://stackoverflow.com/questions/40573380/textview-not-updating");
+            klapzobject.put("expressionPlaceholder", "Tell us, what do you love about this book summary");
+            klapzobject.put("PreferKlapz", "10,20,30");
+
+            klapzobject.put("ThankText", "Thanks for Klapping.");
+            klapzobject.put("ContentType", "summary");
             //Direct //Default
             klapzobject.put("Mode", "Default");
         } catch (JSONException e) {
